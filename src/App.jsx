@@ -1,10 +1,13 @@
 import React from 'react'
-import Public from './pages/Public'
+import Private from './pages/Private/Index'
 
 const App = () => {
   return (
-    <Public/>
+
+    <Private/>
+
   )
 }
 
 export default App
+
