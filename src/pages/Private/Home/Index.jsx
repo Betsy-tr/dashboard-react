@@ -2,8 +2,11 @@ import React from 'react'
 
 const Index = () => {
   return (
-    <div>Index</div>
+    <div>
+      <h1>BIENVENUE SUR TON DASHBOARD !</h1>
+    </div>
   )
 }
 
 export default Index
+
