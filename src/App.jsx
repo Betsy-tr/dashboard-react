@@ -4,7 +4,7 @@ import Private from './pages/Private/Index'
 import { onAuthStateChanged } from '@firebase/auth'
 import { auth } from '../firebase'
 import { initUser, resetUser } from './redux/userStore'
-
+import Public from './pages/Public/Index'
 
 const App = () => {
 
