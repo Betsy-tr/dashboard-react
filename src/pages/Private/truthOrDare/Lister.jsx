@@ -26,9 +26,9 @@ const Lister = () => {
         <thead>
           
           <th></th>
-          <th className='font-serif text-[#14b0dd] text-2xl'>Catégories</th>
-          <th className='font-serif text-[#14b0dd] text-2xl'>Titres</th>
-          <th className='font-serif text-[#14b0dd] text-2xl'>Types</th>
+          <th>Catégories</th>
+          <th>Titres</th>
+          <th>Types</th>
 
         </thead>
 
