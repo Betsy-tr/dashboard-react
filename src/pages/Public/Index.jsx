@@ -1,5 +1,5 @@
 import React from 'react'
-import { loginByEmail , logout } from '../../fonctionsjs/auth'
+import { loginByEmail } from '../../fonctionsjs/auth'
 import { useForm } from 'react-hook-form'
 
 const Index = () => {
