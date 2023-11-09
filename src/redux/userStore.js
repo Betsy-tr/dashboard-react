@@ -17,5 +17,5 @@ export const sliceUser = createSlice({
     }
 })
 
-export const { initUser , resetUser } = player.actions 
+export const { initUser , resetUser } = sliceUser.actions 
 export default sliceUser.reducer
