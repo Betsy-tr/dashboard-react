@@ -2,6 +2,7 @@ import React from 'react'
 import { loginByEmail } from '../../fonctionsjs/auth'
 import { useForm } from 'react-hook-form'
 
+
 const Index = () => {
 
   const {register , handleSubmit , formState:{errors} } = useForm()
@@ -25,7 +26,7 @@ const Index = () => {
       <div>
         <div>
 
-          <h1>DASHBOARD</h1>
+          <h1 className='text-purple-700'>DASHBOARD</h1>
 
           <div>
             <h2>Heureux de te revoir !</h2>
