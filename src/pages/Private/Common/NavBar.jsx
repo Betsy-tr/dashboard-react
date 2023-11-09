@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { logout } from '../../../fonctionsjs/auth'
+
 
 
 const NavBar = () => {
@@ -23,7 +25,7 @@ const NavBar = () => {
                 <ul>
                     <li>
                         <Link to='/'>
-                            <span>Home</span>
+                            <span>Accueil</span>
                         </Link>
                     </li>
                     <li>
@@ -36,6 +38,9 @@ const NavBar = () => {
                             <span>Actions ou Vérités</span>
                         </Link>
                     </li>
+                    <div>
+                        <button onClick={logout}>Déconnexion</button>
+                    </div> 
                 </ul>
             </div>
 
