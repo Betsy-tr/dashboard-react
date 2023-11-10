@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { logout } from '../../../fonctionsjs/auth'
-
-
+import avatar from '../../../assets/avatar.png'
 
 const NavBar = () => {
   return (
@@ -12,35 +10,36 @@ const NavBar = () => {
         <div>
 
             <div>
-                <h5>DASHBOARD</h5> 
+                <h5 className='titleMenu'>DASHBOARD</h5> 
             </div>
 
-            <div>
-                <img src='#'/>
-                <h5>NOM Prénom</h5>
-                <span>Admin</span>
+            <div className='card-user'>
+                <img src={avatar}/>
+                <div className='card-info'>
+                    <h5 className='info'>NOM</h5>
+                    <h5 className='info'>Prénom</h5>
+                </div>
+                
+                <span className='poste'>Admin</span>
             </div>
 
-            <div>
+            <div className='liens'>
                 <ul>
                     <li>
                         <Link to='/'>
-                            <span>Accueil</span>
+                            <span className='route'>Home</span>
                         </Link>
                     </li>
                     <li>
                         <Link to='/categorie'>
-                            <span>Catégories</span>
+                            <span className='route'>Catégories</span>
                         </Link>
                     </li>
                     <li>
                         <Link to='/truthordare'>
-                            <span>Actions ou Vérités</span>
+                            <span className='route'>Actions ou Vérités</span>
                         </Link>
                     </li>
-                    <div>
-                        <button onClick={logout}>Déconnexion</button>
-                    </div> 
                 </ul>
             </div>
 

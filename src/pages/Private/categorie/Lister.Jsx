@@ -20,15 +20,15 @@ const Lister = () => {
     
   
     return (
-        <div>
-            <table>
+        <div className='tableau'>
+            <table className='table'>
         
                 <thead>
         
                     <th></th>
-                    <th>Images</th>
-                    <th>Titres</th>
-                    <th>Positions</th>
+                    <th className='titreTab'>Images</th>
+                    <th className='titreTab'>Titres</th>
+                    <th className='titreTab'>Positions</th>
         
                 </thead>
         

@@ -26,9 +26,9 @@ const Item = ({data}) => {
   return (
     <tr>
       <th></th>
-      <td>{categorie?.name}</td>
-      <td>{data?.title}</td>
-      <td>{data?.type}</td>
+      <td className='dataTab'>{categorie?.name}</td>
+      <td className='dataTab'>{data?.title}</td>
+      <td className='dataTab'>{data?.type}</td>
       <td></td>
     </tr>
   )

@@ -45,12 +45,12 @@ const Ajouter = () => {
   }
 
   return (
-    <div>
+    <div className='sectionAjouter'>
 
-      <input type='file'/>
-      <input name='formCategorie' type='text' value={categorieName} onChange={handleChangeCategorie} placeholder='Saisir un titre'/>
-      <input type='text' value={position} onChange={handleChangePosition}  placeholder='Saisir une position'/>
-      <button onClick={save} type='submit'>Ajouter</button>
+      <input className='inputImage' type='file'/>
+      <input className='inputTitle' name='formCategorie' type='text' value={categorieName} onChange={handleChangeCategorie} placeholder='Saisir un titre'/>
+      <input  className='inputPosition' type='text' value={position} onChange={handleChangePosition}  placeholder='Saisir une position'/>
+      <button className='buttonAjouter' onClick={save} type='submit'>Ajouter</button>
 
     </div>
   )
