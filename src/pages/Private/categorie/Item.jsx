@@ -2,13 +2,13 @@ import React from 'react'
 
 const Item = ({categorie}) => {
   return (
-    <div className='tableau'>
+    <div>
       <tr>
         <th></th>
         {/* <td><img src={categorie.image} alt="" /></td> */}
         <td>#</td>
-        <td className='dataTab'>{categorie?.name}</td>
-        <td className='dataTab'>{categorie?.position}</td>
+        <td>{categorie?.name}</td>
+        <td>{categorie?.position}</td>
         <td></td>
       </tr>
     </div>

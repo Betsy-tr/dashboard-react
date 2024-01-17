@@ -21,16 +21,16 @@ const Lister = () => {
   }, [])
 
   return (
-    <div className='tableau'>
-      <table className='table'>
+    <div>
+      <table>
 
         <thead>
           <tr>
           
             <th></th>
-            <th className='titreTab'>Catégories</th>
-            <th className='titreTab'>Titres</th>
-            <th className='titreTab'>Types</th>
+            <th>Catégories</th>
+            <th>Titres</th>
+            <th>Types</th>
 
           </tr>
         </thead>

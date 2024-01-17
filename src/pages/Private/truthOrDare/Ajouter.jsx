@@ -62,21 +62,21 @@ const Ajouter = () => {
 
 
   return (
-    <div className='sectionAjouterAouV'>
+    <div>
 
-      <select  className='select' value={selectedCategorie} onChange={handleDropCategorie}>
+      <select value={selectedCategorie} onChange={handleDropCategorie}>
         <option defaultValue={''}>Sélectionner une catégorie</option>
-        {categories?.map(data =><option key={data.id} value={data.id} className='font-serif text-black text-sm'>{data.name}</option>)}
+        {categories?.map(data =><option key={data.id} value={data.id}>{data.name}</option>)}
       </select> 
 
-      <select className='select' value={selectedDareOrTruth} onChange={handleDropDareOrTruth}>
-        <option className='option' defaultValue={''}>Sélectionner un type</option>
-        <option className='option' value={'action'}>Action</option>
-        <option className='option' value={'vérité'}>Vérité</option>
+      <select value={selectedDareOrTruth} onChange={handleDropDareOrTruth}>
+        <option defaultValue={''}>Sélectionner un type</option>
+        <option value={'action'}>Action</option>
+        <option value={'vérité'}>Vérité</option>
       </select> 
 
-      <input type='text' className='inputTitle' value={name} onChange={handleChangeName} placeholder='Saisir un titre'/>
-      <button className='buttonAjouter' type='submit' onClick={save}>Ajouter</button>
+      <input type='text' value={name} onChange={handleChangeName} placeholder='Saisir un titre'/>
+      <button type='submit' onClick={save}>Ajouter</button>
 
     </div>
   )

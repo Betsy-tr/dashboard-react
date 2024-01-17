@@ -4,9 +4,9 @@ import Lister from './Lister'
 
 const Index = () => {
   return (
-    <div className='section'>
+    <div>
 
-      <h1 className='titleCategorie'>AJOUTER UNE NOUVELLE CATÉGORIE</h1>
+      <h1>AJOUTER UNE NOUVELLE CATÉGORIE</h1>
       <Ajouter/>
       <Lister/>
       
