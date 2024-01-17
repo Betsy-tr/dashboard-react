@@ -1,18 +1,18 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
-:root{
+/* :root{
   font-family: handlee ;
-}
+} */
 
-body{
+/* body{
   background-color: black;
-} 
+}  */
 
-button, input{
+/* button, input{
   font-family: handlee;
-}
+} */
 
 /* button{
   border: .1rem solid white;
@@ -26,12 +26,24 @@ button, input{
   font-size: 1.5rem;
 } */
 
-span{
-  color: white;
+.login{
+  border: .1rem solid white;
+  border-radius: 1rem;
+  width: 20rem;
   margin-left: 2rem;
+  margin-top: 4rem;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
 }
 
-input{
+/* span{
+  color: white;
+  margin-left: 2rem;
+} */
+
+/* input{
   border: .1rem solid white;
   border-radius: 1rem;
   width: 20rem;
@@ -46,21 +58,21 @@ input{
 input::placeholder{
   color: white;
   font-size: 1.1rem;
-}
+} */
 
-h1{
+/* h1{
   font-size: 3.2em;
   line-height: 3;
-}
+} */
 
-.titleConnexion{
+/* .titleConnexion{
   text-align: center;
   text-decoration: underline;
   color: white;
   font-weight: normal;
   font-size: 2em;
   line-height: 3;
-}
+} */
 
 .sousTitle{
   color: white;
@@ -86,7 +98,7 @@ h1{
 
 /*** NAVBAR ***/
 
-aside{
+/* aside{
   margin-left: -100%;
   z-index: 10;
   position: fixed;
@@ -102,7 +114,7 @@ aside{
   border-right-width: 1px;
   transition-duration: 300ms;
   background-color: #D9D9D9;
-}
+} */
 
 @media(min-width : 768px){
   aside{
@@ -164,9 +176,9 @@ aside{
   margin-top: 5rem;
 }
 
-li{
-  line-height: 2.5rem;
-}
+/* li{
+  line-height: 3.2rem;
+} */
 
 .route:hover{
   color: #F20000;
@@ -179,6 +191,17 @@ li{
 .route{
   color: black;
   font-size: 1.3rem;
+}
+
+.logout{
+  color: black;
+  font-size: 1.4rem;
+  margin-left: 2rem;
+  margin-top: 1.2rem;
+}
+
+.logout:hover{
+  color: #F20000;
 }
 
 /*** HOME ***/

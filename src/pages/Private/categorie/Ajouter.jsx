@@ -8,53 +8,46 @@ const Ajouter = () => {
   const [position, setPosition] = useState("")
 
   const handleChangeCategorie = (event) => { 
-
     setCategorieName(event.target.value)
-
   }
 
   const handleChangePosition = (event) => { 
-
     setPosition(event.target.value)
-
   }
 
   const save = async () => { 
+        if (categorieName != '' && position != '') {
 
-    if (categorieName != '') {
+            console.log('save')
+            const data = {
 
-      console.log('save')
-      const data = {
+                name : categorieName ,
+                position : position ,
 
-        name : categorieName ,
-        position : position ,
+            } 
+            // Formatage de la data sous forme d'objet
+            await addDataToCollection("categorie" , data)
 
-      } // Formatage de la data sous forme d'objet
-      await addDataToCollection("categorie" , data)
-
-      // Remise à 0 du formulaire
-      setCategorieName("") 
-      setPosition("")
-      
-    } else {
-      
-      console.log('no save')
-
+            // Remise à 0 du formulaire
+            setCategorieName("") 
+            setPosition("")
+        
+        } else {
+            console.log('no save')
+        }
     }
-
-  }
+    
 
   return (
-    <div className='sectionAjouter'>
+    <div>
 
-      <input className='inputImage' type='file'/>
-      <input className='inputTitle' name='formCategorie' type='text' value={categorieName} onChange={handleChangeCategorie} placeholder='Saisir un titre'/>
-      <input  className='inputPosition' type='text' value={position} onChange={handleChangePosition}  placeholder='Saisir une position'/>
-      <button className='buttonAjouter' onClick={save} type='submit'>Ajouter</button>
+      <input type='file'/>
+      <input name='formCategorie' type='text' value={categorieName} onChange={handleChangeCategorie} placeholder='Saisir un titre'/>
+      <input type='text' value={position} onChange={handleChangePosition}  placeholder='Saisir une position'/>
+      <button onClick={save} type='submit'>Ajouter</button>
 
     </div>
   )
 }
 
 export default Ajouter
-

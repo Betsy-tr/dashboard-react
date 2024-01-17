@@ -24,12 +24,14 @@ const Lister = () => {
             <table className='table'>
         
                 <thead>
+                    <tr>
         
-                    <th></th>
-                    <th className='titreTab'>Images</th>
-                    <th className='titreTab'>Titres</th>
-                    <th className='titreTab'>Positions</th>
-        
+                        <th></th>
+                        <th className='titreTab'>Images</th>
+                        <th className='titreTab'>Titres</th>
+                        <th className='titreTab'>Positions</th>
+
+                    </tr>
                 </thead>
         
                 <tbody>

@@ -22,7 +22,7 @@ const Index = () => {
   }
 
   return (
-    <div>
+    
       <div className='card'>
         <div>
 
@@ -53,7 +53,7 @@ const Index = () => {
               </div>
 
               <div>
-                <button type='submit'>SE CONNECTER</button>
+                <button className='login' type='submit'>SE CONNECTER</button>
               </div>
                                   
             </form>
@@ -62,7 +62,7 @@ const Index = () => {
 
         </div>
       </div>
-    </div>
+    
   )
 }
 

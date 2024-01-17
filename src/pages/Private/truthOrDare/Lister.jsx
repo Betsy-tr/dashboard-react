@@ -11,6 +11,7 @@ const Lister = () => {
 
     const dataTemp = await getAll('DareOrTruth')
     setName(dataTemp)
+
   }
 
   useEffect(() => {
@@ -24,12 +25,14 @@ const Lister = () => {
       <table className='table'>
 
         <thead>
+          <tr>
           
-          <th></th>
-          <th className='titreTab'>Catégories</th>
-          <th className='titreTab'>Titres</th>
-          <th className='titreTab'>Types</th>
+            <th></th>
+            <th className='titreTab'>Catégories</th>
+            <th className='titreTab'>Titres</th>
+            <th className='titreTab'>Types</th>
 
+          </tr>
         </thead>
 
         <tbody>
